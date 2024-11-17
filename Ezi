@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Name</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #4B2E2A; /* Brown background */
+            padding: 1rem;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .cta {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+
+        }
+
+        /* Hero Section */
+        #hero {
+            background: #4B2E2A; /* Brown background */
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        #hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Features Section */
+        #features {
+            background: #D2B48C; /* Light brown background */
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .feature-cards {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        /* Testimonials Section */
+        #testimonials {
+            background: #D2B48C; /* Light brown background*/
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        blockquote {
+            margin: 1rem 0;
+            font-style: italic;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: #4B2E2A; /* Brown background */
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            width: 100%;
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 0.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: #4B2E2A; /* Brown background */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .feature-cards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="logo" width="55">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="cta">Get Started</button></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Welcome to Ezi Movers</h1>
+                <h2> Moving made easy!</h2>
+                <p>Your trusted partner for efficient and hassle-free solutions.</p>
+                <button class="cta">Learn More</button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <h2>Features</h2>
+            <div class="feature-cards">
+                <div class="card">
+                     <img src="ezi.jpg" alt="picture" width="100">
+                     <h3>Call-to-Action</h3>
+                    <p>xStreamline your workflow with our powerful tools.</p>
+                </div>
+                <div class="card">
+                    <h3>Feature 2</h3>
+                    <p>Boost productivity and efficiency like never before.</p>
+                </div>
+                <div class="card">
+                    <h3>Feature 3</h3>
+                    <p>Gain insights with advanced analytics.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials">
+                <blockquote>
+                    "This product has revolutionized the way we do business!"
+                    <cite>- Happy Client</cite>
+                </blockquote>
+                <blockquote>
+                    "I can't imagine working without these amazing tools."
+                    <cite>- Satisfied User</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Startup Name. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle Mobile Menu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
